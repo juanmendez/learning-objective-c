@@ -9,35 +9,22 @@
 
 #import <Foundation/Foundation.h>
 
-//i get an error if this method is below main
-//this is so procedural when I think about it.
-//we can leave it below if we first declare void printMyPaid(int paid), and write the body below
-void printMyPaid(int paid) {
-    NSLog(@"I get paid %i time%s a year", paid, paid>1?"s":"");
-}
+//you can set values like android = 2009.. else each default value is based on index
+enum mobilePreference {
+    android,
+    ios,
+    xamarin,
+    reactNative
+};
 
-//reminds me of C++ pointers.. same with &$var in PHP
-NSString* printMyMood(NSString *mood) {
-    NSString *yourMood = @"unknown";
-    
-    if([mood isEqualToString: @":)"]){
-        yourMood = @"You are very happy to learn objective-c";
-    } else if([mood isEqualToString: @":("]){
-        yourMood = @"I am not so happy. This is like going back to 1999";
-    }
-    
-    return yourMood;
-}
-
-//like C++, every project requires main
 int main(int argc, const char * argv[]) {
     //memory management..
     @autoreleasepool {
-        printMyPaid(1);
-        printMyPaid(24);
+        enum mobilePreference androidPref = android;
+        enum mobilePreference iosPref = ios;
         
-        NSLog(@"how I feel: %@", printMyMood(@":)"));
-        NSLog(@"how I feel: %@", printMyMood(@":("));
+        NSLog(@"You picked Android %i", androidPref);
+        NSLog(@"You picked IOS %i", iosPref);
     }
     
     //marks successful conclusion
