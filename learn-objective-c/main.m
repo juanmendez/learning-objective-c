@@ -22,16 +22,8 @@ int main(int argc, const char * argv[]) {
         [cplusLanguage setName:@"C++"];
         NSLog(@"the name of the language is %@", [cplusLanguage name]);
         
-        Language *kotlin = [[Language alloc] init];
-        [kotlin setName:@"Kotlin"];
-        
-        //println( "This funky language's name is ${kotlin.name}" )
-        NSLog(@"This funky language's name is %@", [kotlin name]);
-        
-        //println( kotlin.hello(kotlin.name) );
-        NSLog(@"%@", [kotlin hello:[kotlin name]]);
-        
-        NSLog(@"dumb sum %i", [Language plusFirst:1 plusSecond:1 plusThird:1]);
+        Language *kotlin = [[Language alloc] initWithName:@"Kotlin"];
+        NSLog(@"the name of the language is %@", [kotlin name]);
     }
     
     //marks successful conclusion

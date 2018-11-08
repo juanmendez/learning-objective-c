@@ -6,27 +6,20 @@
 //  Copyright © 2018 juanmendez.info. All rights reserved.
 //
 #import "Language.h"
-
 @implementation Language
 
-/**
- -|+ (object method or class method [static])
- (return type)
- methodName: (type) param1
- [nthMethodName: (type) paramN]
- 
- calling this
- [object methodName: value nthMethodName: value]
- **/
-- (NSString *) hello: (NSString *) message {
-    return [NSString stringWithFormat:@"hello=> %@", message];
+/*
+init which is the default constructor doesn't require to be declared at the interface file.
+ whereas this is a custom constructor, and therefore we have it declared at Language.h and in here
+*/
+- (id) initWithName: (NSString*) name {
+    self = [super init];
+    
+    if (self != nil) {
+        [self setName:name];
+    }
+    
+    return self;
 }
 
-+ (int)
-    plusFirst:(int) firstValue
-    plusSecond:(int) secondValue
-    plusThird:(int)thirdValue {
-    return firstValue + secondValue + thirdValue;
-}
-
-@end (nonatomic);
+@end
