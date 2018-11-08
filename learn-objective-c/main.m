@@ -7,31 +7,31 @@
 // in 1999, I learned C++, and this is the kind of things I used to do
 // write dumb demos to learn how to program. It feels like I am doing it all over
 #import <Foundation/Foundation.h>
-
-NSString *changeTheValue(NSString *letsChangeTheVariable) {
-    return letsChangeTheVariable = @"Bonjour";
-}
+#import "Language.h"
 
 int main(int argc, const char * argv[]) {
     //memory management..
     @autoreleasepool {
-        //c does not have a string object, unless is an array of chars..
-        //therefore there is an objective-c defined string type
-        //asterisk stands for pointer.
-        //a pointer is a reference of an object in memory
-        //asterisk is only set in declaration; thereafter, object can work without it.
-        NSString *message = @"Hello";
-        NSString *spyMessage = message; //so in this case, there is a new allocation, not pointing to the same object
+        /**
+         [object getter]
+         [object setterMethod(value)]
+         **/
         
-        //this is updating the value. BUT, is there a way to change the value without having to return it
-        //in PHP &var is used to do that.
-        spyMessage = changeTheValue(spyMessage);
+        //insert code here...
+        Language *cplusLanguage = [[Language alloc] init];
+        [cplusLanguage setName:@"C++"];
+        NSLog(@"the name of the language is %@", [cplusLanguage name]);
         
-        if([spyMessage isEqualToString:message]) {
-            NSLog(@"It is equal to Hola");
-        } else {
-            NSLog(@"It is not equal to Hola");
-        }
+        Language *kotlin = [[Language alloc] init];
+        [kotlin setName:@"Kotlin"];
+        
+        //println( "This funky language's name is ${kotlin.name}" )
+        NSLog(@"This funky language's name is %@", [kotlin name]);
+        
+        //println( kotlin.hello(kotlin.name) );
+        NSLog(@"%@", [kotlin hello:[kotlin name]]);
+        
+        NSLog(@"dumb sum %i", [Language plusFirst:1 plusSecond:1 plusThird:1]);
     }
     
     //marks successful conclusion
