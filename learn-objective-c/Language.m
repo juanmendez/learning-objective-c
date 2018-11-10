@@ -29,4 +29,4 @@
     return firstValue + secondValue + thirdValue;
 }
 
-@end (nonatomic);
+@end
