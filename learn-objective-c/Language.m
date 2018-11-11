@@ -22,7 +22,7 @@
  in java we use this("Objective-C")  if we have a default constructor, which is overriden by
  Language(String name)
  **/
-- (instancetype) init {
+- (id) init {
     return [self initWithName:@"Objective-C"];
 }
 
