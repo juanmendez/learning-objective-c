@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Language : NSObject //NSObject is the root class of all
-@property NSString *name;
-
 - (id) initWithName: (NSString*) name;
+@property(readonly) NSString *name;
 @end
