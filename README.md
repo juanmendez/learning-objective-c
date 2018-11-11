@@ -1,4 +1,4 @@
-# treating properties and methods as private
+# Treating properties and methods as private
 
 Objective-C doesn't have any `private` modifier like in the case of other languages such as Kotlin.
 
