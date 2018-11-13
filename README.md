@@ -6,4 +6,4 @@ Our work is always paired, so I find this kind of learning helpful.
 
 To be honest, I thought Objective-C was harder than I thought it was. OOP fundamentals are there, and it's just a different syntax.
 
-The whole learning experience is broken in branches. I did this during my free time within two weeks. [Objective-C Essential Training](https://www.linkedin.com/learning/objective-c-essential-training/inheritance-and-overriding-in-objective-c)
+The whole learning experience is broken in branches. I did this during my free time within three weeks. [Objective-C Essential Training](https://www.linkedin.com/learning/objective-c-essential-training/inheritance-and-overriding-in-objective-c)
