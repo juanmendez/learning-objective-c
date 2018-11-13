@@ -6,15 +6,15 @@
 //  Copyright © 2018 juanmendez.info. All rights reserved.
 #import <Foundation/Foundation.h>
 #import "Language.h"
-#import "ScriptingLanguage.h"
+#import "Language+Ext.h"
 
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
         //insert code here...
-        ScriptingLanguage *javascript = [[ScriptingLanguage alloc]initWithName:@"JavaScript"];
+        Language *javascript = [[Language alloc]initWithName:@"JavaScript"];
         NSLog(@"This is a badass scripting language %@", javascript);
-        NSLog(@"%@", [javascript hello]);
+        NSLog(@"%@", [javascript convertToFunkyName]);
     }
     
     return 0;
