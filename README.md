@@ -7,3 +7,5 @@ Our work is always paired, so I find this kind of learning helpful.
 To be honest, I thought Objective-C was harder than it is. OOP fundamentals are there, and it's just a different syntax.
 
 This learning is inspired from Simon Allardice's [Objective-C Essential Training](https://www.linkedin.com/learning/objective-c-essential-training/inheritance-and-overriding-in-objective-c)
+
+You can only add methods, not properties. This comes handy for extending classes that you don't own such as `NSString`
