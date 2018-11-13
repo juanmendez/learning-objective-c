@@ -7,3 +7,5 @@ This demo shows how to make an extension of the class `Language` which is archiv
 Notice every `Category file` created uses this pattern `BaseClass+CategoryFileName`.
  
 Make sure to include the `Category file` in your main file for this to take place. Where as in `Kotlin` there is no need to import.
+
+You can only add methods, not properties. This comes handy for extending classes that you don't own such as `NSString`
