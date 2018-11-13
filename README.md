@@ -1,17 +1,9 @@
-# Inheritance and Overriding
+# Extending Classes
 
-To create a child class go to `file` -> `new file` -> `create a new file`, there in the wizard you select to make a class, and intead of being based on `NSObject`, you pick the parent class. In this way the interface and implementation files get created.
+We have in Kotlin a way to extend classes as found in this [Kotlin Extensions](https://kotlinlang.org/docs/reference/extensions.html) article.
 
-What is interesting in this language is that you don't need to include the keyword `override` like in Java or Kotlin. Inheritance is chained by the child interface and not its implementation. 
+This demo shows how to make an extension of the class `Language` which is archived as `Language+Ext`. This is the pattern used and you are able to make an extension using `file > new file > Objective-C File > [ File: Ext, File Type: Category, Class: ClassToExtend]`
 
-This is how we call our parent class: `[super methodName]`. 
-
-We have seen how we declare methods segemented by method names
-
-`-(ReturnType) methodName0: ReturnType param0 methodName1: ReturnType param1`
-
-This is a nice way to do overloading. See for yourself:
-```
-- (NSString *) hello;
-- (NSString*) hello: (NSString*) funkyMessage;
-```
+Notice every `Category file` created uses this pattern `BaseClass+CategoryFileName`.
+ 
+Make sure to include the `Category file` in your main file for this to take place. Where as in `Kotlin` there is no need to import.
