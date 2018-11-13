@@ -4,6 +4,6 @@ As an Android developer I find important to understand the world of iOS. It is a
 
 Our work is always paired, so I find this kind of learning helpful.
 
-To be honest, I thought Objective-C was harder than I thought it was. OOP fundamentals are there, and it's just a different syntax.
+To be honest, I thought Objective-C was harder than it is. OOP fundamentals are there, and it's just a different syntax.
 
 This learning is ispired from Simon Allardice's [Objective-C Essential Training](https://www.linkedin.com/learning/objective-c-essential-training/inheritance-and-overriding-in-objective-c)
