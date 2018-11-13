@@ -45,4 +45,11 @@
     NSLog(@"instance created with %@", [self name]);
 }
 
+-(NSString*) hello{
+    return [NSString stringWithFormat:@"Hello %@", [self name]];
+}
+
+-(NSString*) hello: (NSString*) funkyMessage{
+    return [NSString stringWithFormat:@"@@@@@~~~~~~~~~%@", funkyMessage];
+}
 @end

@@ -10,5 +10,7 @@
 
 @interface Language : NSObject //NSObject is the root class of all
 - (id) initWithName: (NSString*) name;
+- (NSString *) hello;
+- (NSString*) hello: (NSString*) funkyMessage;
 @property(readonly) NSString *name;
 @end

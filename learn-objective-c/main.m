@@ -6,15 +6,15 @@
 //  Copyright © 2018 juanmendez.info. All rights reserved.
 #import <Foundation/Foundation.h>
 #import "Language.h"
+#import "ScriptingLanguage.h"
 
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
         //insert code here...
-        Language *cplusLanguage = [[Language alloc] init];
-        //fails: [cplusLanguage setName:@"C++"];
-        
-        Language *kotlin = [[Language alloc] initWithName:@"Kotlin"];
+        ScriptingLanguage *javascript = [[ScriptingLanguage alloc]initWithName:@"JavaScript"];
+        NSLog(@"This is a badass scripting language %@", javascript);
+        NSLog(@"%@", [javascript hello]);
     }
     
     return 0;
