@@ -1,6 +1,6 @@
 # Inheritance and Overriding
 
-Using the wizard, you go to `file` -> `new file` -> `create a new file`, there in the wizard you select to make a class, and intead of being based on `NSObject`, you pick one of your classes. In this way the interface and implementation files are created.
+To create a child class go to `file` -> `new file` -> `create a new file`, there in the wizard you select to make a class, and intead of being based on `NSObject`, you pick the parent class. In this way the interface and implementation files get created.
 
 What is interesting in this language is that you don't need to include the keyword `override` like in Java or Kotlin. Inheritance is chained by the child interface and not its implementation. 
 
