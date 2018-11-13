@@ -1,13 +1,17 @@
-# Treating properties and methods as private
+# Inheritance and Overriding
 
-Objective-C doesn't have any `private` modifier like in the case of other languages such as Kotlin.
+To create a child class go to `file` -> `new file` -> `create a new file`, there in the wizard you select to make a class, and intead of being based on `NSObject`, you pick the parent class. In this way the interface and implementation files get created.
 
-In this demo we show how we can set a property as `read-only` in the interface file.
-Within the implementation we can inject the same property to be mutable as part of the interface. 
+What is interesting in this language is that you don't need to include the keyword `override` like in Java or Kotlin. Inheritance is chained by the child interface and not its implementation. 
 
-We can also inject methods which are accessed only in the implementation file.
+This is how we call our parent class: `[super methodName]`. 
 
-This demo also shows how to override constructors, such as the case of java which uses `this(param, param, "default value)". 
+We have seen how we declare methods segemented by method names
 
-Aside from learning about hidden properties and methods, I bumped a few times with `atomic` modifier in some code lines.
-Here is an article about this feature [Atomic/Non-Atomic in Objective-C](https://medium.com/@YogevSitton/atomic-vs-non-atomic-properties-crash-course-d11c23f4366c)
+`-(ReturnType) methodName0: ReturnType param0 methodName1: ReturnType param1`
+
+This is a nice way to do overloading. See for yourself:
+```
+- (NSString *) hello;
+- (NSString*) hello: (NSString*) funkyMessage;
+```
