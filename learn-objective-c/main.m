@@ -5,16 +5,21 @@
 //  Created by Mendez, Juan on 10/30/18.
 //  Copyright © 2018 juanmendez.info. All rights reserved.
 #import <Foundation/Foundation.h>
-#import "Language.h"
-#import "Language+Ext.h"
+#import "AcmeCompany.h"
+#import "DevUtil.m"
 
 int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
-        //insert code here...
-        Language *javascript = [[Language alloc]initWithName:@"JavaScript"];
-        NSLog(@"This is a badass scripting language %@", javascript);
-        NSLog(@"%@", [javascript convertToFunkyName]);
+        AcmeCompany *acme = [[AcmeCompany alloc] init];
+        [acme analysis:@"Have Product Owners and Developers meet"];
+        tellIfItHasCompleted(acme);
+        
+        [acme planning:@"Meeting" having:@"Pizza App"];
+        tellIfItHasCompleted(acme);
+        
+        [acme development:@"Kotlin"];
+        tellIfItHasCompleted(acme);
     }
     
     return 0;
