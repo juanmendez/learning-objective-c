@@ -7,7 +7,6 @@
 //
 
 #import "AcmeCompany.h"
-#import "AcmeCompany.h"
 #import "DevUtil.m"
 
 @interface AcmeCompany()
