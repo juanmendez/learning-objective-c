@@ -1,4 +1,4 @@
-# Extending Classes
+# Class Categories
 
 We have in Kotlin a way to extend classes as found in this [Kotlin Extensions](https://kotlinlang.org/docs/reference/extensions.html) article.
 
