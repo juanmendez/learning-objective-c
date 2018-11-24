@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF85D11B2189165C00B07126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85D11A2189165C00B07126 /* main.m */; };
+		AFC53EED21A9D5510008F4F0 /* BlockTester.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC53EEC21A9D5510008F4F0 /* BlockTester.m */; };
+		AFC53EF021A9E53D0008F4F0 /* Ray.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC53EEF21A9E53D0008F4F0 /* Ray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		AF85D1172189165C00B07126 /* learn-objective-c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "learn-objective-c"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF85D11A2189165C00B07126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFC53EEB21A9D5510008F4F0 /* BlockTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlockTester.h; path = "learn-objective-c/BlockTester.h"; sourceTree = "<group>"; };
+		AFC53EEC21A9D5510008F4F0 /* BlockTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BlockTester.m; path = "learn-objective-c/BlockTester.m"; sourceTree = "<group>"; };
+		AFC53EEE21A9E53D0008F4F0 /* Ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Ray.h; path = "learn-objective-c/Ray.h"; sourceTree = "<group>"; };
+		AFC53EEF21A9E53D0008F4F0 /* Ray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Ray.m; path = "learn-objective-c/Ray.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,10 @@
 		AF85D10E2189165C00B07126 = {
 			isa = PBXGroup;
 			children = (
+				AFC53EEE21A9E53D0008F4F0 /* Ray.h */,
+				AFC53EEF21A9E53D0008F4F0 /* Ray.m */,
+				AFC53EEB21A9D5510008F4F0 /* BlockTester.h */,
+				AFC53EEC21A9D5510008F4F0 /* BlockTester.m */,
 				AF85D1192189165C00B07126 /* learn-objective-c */,
 				AF85D1182189165C00B07126 /* Products */,
 			);
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC53EF021A9E53D0008F4F0 /* Ray.m in Sources */,
+				AFC53EED21A9D5510008F4F0 /* BlockTester.m in Sources */,
 				AF85D11B2189165C00B07126 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
