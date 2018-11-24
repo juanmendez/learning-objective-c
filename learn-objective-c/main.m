@@ -52,6 +52,14 @@ static void dictionaryTutorial() {
     //same thing we can use NSMutableDictionary.. just like mapOf(), and mutableMapOf() in Kotlin
 }
 
+static void iterateLoop() {
+    NSArray *objcStringList = [[NSArray alloc] initWithObjects: @"1", @"2", @"3", @"4", @"5", nil];
+    
+    for (NSString* str in objcStringList) {
+        NSLog(@"iteration  %@", str);
+    }
+}
+
 //like C++, every project requires main
 int main(int argc, const char * argv[]) {
     //memory management..
@@ -59,7 +67,7 @@ int main(int argc, const char * argv[]) {
         cArrayTutorial();
         objcArrayTutorial();
         dictionaryTutorial();
-
+        iterateLoop();
     }
     
     //marks successful conclusion
