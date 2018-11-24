@@ -15,6 +15,7 @@ int main(int argc, const char * argv[]) {
         Language *javascript = [[Language alloc]initWithName:@"JavaScript"];
         NSLog(@"This is a badass scripting language %@", javascript);
         NSLog(@"%@", [javascript convertToFunkyName]);
+        NSLog(@"%@ %@", [javascript convertToFunkyName], [javascript convertToFunkyName: @"Angular Rulez!"]);
     }
     
     return 0;

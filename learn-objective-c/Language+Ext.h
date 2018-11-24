@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Language (Ext)
 -(NSString *) convertToFunkyName;
+-(NSString *) convertToFunkyName: (NSString*) str;
 @end
 
 NS_ASSUME_NONNULL_END

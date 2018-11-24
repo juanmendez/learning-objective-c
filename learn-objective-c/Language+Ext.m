@@ -10,6 +10,11 @@
 
 @implementation Language (Ext)
 -(NSString*) convertToFunkyName{
-    return [NSString stringWithFormat:@"^^^%@^^^", [self name]];
+    return [self convertToFunkyName: [self name]];
 }
+
+-(NSString*) convertToFunkyName:(NSString *)str{
+    return [NSString stringWithFormat:@"^^^%@^^^", str];
+}
+
 @end
